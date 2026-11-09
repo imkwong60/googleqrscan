@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "熊本熊 QR 掃描器",
-  "short_name": "熊本熊 QR",
-  "description": "可愛的熊本熊 QR Code 掃描器 · 本地儲存 · 產生 QR · 離線優先",
+  "name": "柴柴 QR",
+  "short_name": "柴柴 QR",
+  "description": "可愛柴犬 QR Code 掃描器 · 本地儲存 · 產生 QR · 離線優先",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
