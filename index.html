@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>熊本熊 QR 掃描器</title>
+    <title>柴柴 QR</title>
     
     <!-- iOS / PWA 設定 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="熊本熊 QR">
+    <meta name="apple-mobile-web-app-title" content="柴柴 QR">
     <meta name="theme-color" content="#18181b">
-    <meta name="description" content="可愛的熊本熊 QR Code 掃描器 · 儲存 · 產生">
+    <meta name="description" content="柴柴 QR Scanner · 儲存 · 產生 QR">
     
     <!-- Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
@@ -198,11 +198,11 @@
             </div>
             <div>
                 <h1 class="font-black text-base text-white tracking-wide leading-tight flex items-center gap-1.5">
-                    熊本熊 QR <span class="text-[9px] bg-rose-500 text-white px-1.5 py-0.5 rounded-full font-bold uppercase tracking-wider">PWA</span>
+                    柴柴 QR <span class="text-[9px] bg-rose-500 text-white px-1.5 py-0.5 rounded-full font-bold uppercase tracking-wider">PWA</span>
                 </h1>
                 <p class="text-[11px] text-zinc-400 flex items-center gap-1.5 mt-0.5">
                     <span id="status-indicator" class="w-2 h-2 rounded-full bg-emerald-400 inline-block shadow-sm"></span>
-                    <span id="status-text" class="font-medium text-emerald-400">Kumamon 準備好囉！</span>
+                    <span id="status-text" class="font-medium text-emerald-400">柴柴 準備好囉！</span>
                 </p>
             </div>
         </div>
@@ -221,7 +221,7 @@
                 <div class="flex items-start justify-between">
                     <div class="flex items-center gap-2 font-bold text-rose-400 mb-1">
                         <i class="fa-solid fa-heart text-rose-500"></i>
-                        <span>熊本熊邀請你安裝全屏 App！</span>
+                        <span>柴柴邀請你安裝全屏 App！</span>
                     </div>
                     <button onclick="dismissIosPrompt()" class="text-zinc-400 hover:text-zinc-200 px-1">
                         <i class="fa-solid fa-xmark text-base"></i>
@@ -230,7 +230,7 @@
                 <ol class="list-decimal list-inside text-xs text-zinc-300 space-y-1.5 mt-2 font-medium">
                     <li>點選 Safari 底部選單的 <i class="fa-solid fa-share-from-square text-rose-400"></i> <b>「分享」</b></li>
                     <li>選擇 <i class="fa-regular fa-square-plus text-rose-400"></i> <b>「加入主畫面」</b></li>
-                    <li>點擊主畫面圖示，立即享受熊本熊<b>全屏模式</b>！</li>
+                    <li>點擊主畫面圖示，立即享受柴柴<b>全屏模式</b>！</li>
                 </ol>
             </div>
 
@@ -263,7 +263,7 @@
             <div id="result-card" class="mt-4 bg-zinc-800 border-2 border-rose-500/40 rounded-3xl p-4 shadow-xl hidden transition-all">
                 <div class="flex items-center justify-between text-xs text-zinc-400 mb-2">
                     <span class="font-bold text-rose-400 flex items-center gap-1.5">
-                        <i class="fa-solid fa-face-laugh-beam"></i> 掃描成功！熊本熊記下來了！
+                        <i class="fa-solid fa-face-laugh-beam"></i> 掃描成功！柴柴記下來了！
                     </span>
                     <span id="result-time" class="text-[10px] bg-zinc-700 px-2 py-0.5 rounded-full font-medium text-zinc-300">剛才</span>
                 </div>
@@ -283,7 +283,7 @@
             <div class="mt-6 mb-20">
                 <div class="flex justify-between items-center mb-3 px-1">
                     <h2 class="text-xs font-bold text-zinc-400 tracking-wider flex items-center gap-1.5">
-                        <i class="fa-solid fa-paw text-rose-500"></i> 熊本熊腳印 (歷史紀錄)
+                        <i class="fa-solid fa-paw text-rose-500"></i> 柴柴腳印 (歷史紀錄)
                     </h2>
                     <button onclick="clearHistory()" class="text-[11px] font-bold text-rose-400 hover:text-rose-300 bg-rose-950/60 px-2.5 py-1 rounded-full border border-rose-800/40">清空紀錄</button>
                 </div>
@@ -328,7 +328,7 @@
             <div id="myqr-empty" class="text-center py-12 text-zinc-500 hidden">
                 <i class="fa-solid fa-box-open text-4xl text-rose-400/60 mb-3 block"></i>
                 <p class="text-sm font-medium">還沒有收藏的 QR 喔</p>
-                <p class="text-xs mt-1 text-zinc-600">拍下會員卡、WiFi、付款碼給熊本熊保管！</p>
+                <p class="text-xs mt-1 text-zinc-600">拍下會員卡、WiFi、付款碼給柴柴保管！</p>
             </div>
         </div>
 
@@ -872,7 +872,7 @@
             else btnOpen.classList.add('hidden');
 
             saveHistory(decodedText);
-            showToast("熊本熊成功掃到內容囉！");
+            showToast("柴柴成功掃到內容囉！");
         }
 
         function onScanFailure(error) {}
@@ -899,7 +899,7 @@
                 listEl.innerHTML = `
                     <li class="text-zinc-500 text-xs text-center py-6 bg-zinc-800/40 rounded-3xl border border-dashed border-zinc-700">
                         <i class="fa-solid fa-face-sad-tear text-rose-400 text-2xl mb-1 block"></i>
-                        還沒有紀錄喔，快拿 QR code 給熊本熊掃！
+                        還沒有紀錄喔，快拿 QR code 給柴柴掃！
                     </li>`;
                 return;
             }
@@ -930,7 +930,7 @@
             history = [];
             localStorage.removeItem('qr_kumamon_history');
             renderHistory();
-            showToast("熊本熊已清空腳印！");
+            showToast("柴柴已清空腳印！");
         }
 
         // ========== 我的 QR ==========
@@ -1157,7 +1157,7 @@
                 if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
                     await navigator.share({
                         files: [file],
-                        title: item.name || '熊本熊 QR',
+                        title: item.name || '柴柴 QR',
                         text: item.notes || (item.name ? `分享「${item.name}」的 QR Code` : '分享 QR Code')
                     });
                     showToast('已開啟分享');
@@ -1167,7 +1167,7 @@
                 // 部分瀏覽器支援 share 但不支援 files
                 if (navigator.share) {
                     await navigator.share({
-                        title: item.name || '熊本熊 QR',
+                        title: item.name || '柴柴 QR',
                         text: item.notes || (item.name ? `分享「${item.name}」的 QR Code` : '分享 QR Code')
                     });
                     showToast('已開啟分享');
@@ -1196,7 +1196,7 @@
 
             try {
                 const zip = new JSZip();
-                const folder = zip.folder('熊本熊_QR_備份');
+                const folder = zip.folder('柴柴_QR_備份');
 
                 myQRItems.forEach((item, idx) => {
                     // dataUrl -> binary
@@ -1216,7 +1216,7 @@
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = `熊本熊_QR_${new Date().toISOString().slice(0,10)}.zip`;
+                a.download = `柴柴_QR_${new Date().toISOString().slice(0,10)}.zip`;
                 a.click();
                 setTimeout(() => URL.revokeObjectURL(url), 5000);
                 showToast(`已匯出 ${myQRItems.length} 張圖片！`);
@@ -1401,7 +1401,7 @@
                 if (navigator.onLine) {
                     statusIndicator.className = "w-2 h-2 rounded-full bg-emerald-400 inline-block shadow-sm";
                     statusText.className = "font-medium text-emerald-400";
-                    statusText.innerText = "Kumamon 準備好囉！";
+                    statusText.innerText = "柴柴 準備好囉！";
                 } else {
                     statusIndicator.className = "w-2 h-2 rounded-full bg-amber-400 inline-block shadow-sm";
                     statusText.className = "font-medium text-amber-400";
