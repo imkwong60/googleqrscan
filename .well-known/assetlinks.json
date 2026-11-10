@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "io.github.imkwong60.twa",
+    "sha256_cert_fingerprints": ["你的 SHA-256 憑證指紋"]
+  }
+}]
